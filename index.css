@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top left, rgba(99, 102, 241, 0.16), transparent 28%),
+      radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 22%),
+      linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    color: #0f172a;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(79, 70, 229, 0.14);
+  }
+}
+
+@layer components {
+  .app-panel {
+    @apply rounded-3xl border border-slate-200/80 bg-white/90 shadow-[0_20px_60px_rgba(15,23,42,0.06)] backdrop-blur;
+  }
+
+  .app-chip {
+    @apply inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition hover:border-indigo-200 hover:text-indigo-700;
+  }
+
+  .app-input {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-300 focus:ring-4 focus:ring-indigo-100;
+  }
+
+  .app-button {
+    @apply inline-flex items-center justify-center rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-indigo-600 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .app-button-secondary {
+    @apply inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-indigo-200 hover:text-indigo-700;
+  }
+
+  .app-link {
+    @apply text-sm font-medium text-indigo-600 transition hover:text-indigo-700;
+  }
+}

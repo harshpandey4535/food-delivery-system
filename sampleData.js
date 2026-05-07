@@ -1,0 +1,58 @@
+module.exports = [
+  {
+    name: "Green Spoon",
+    location: "Downtown",
+    cuisine: "Healthy",
+    rating: 4.8,
+    deliveryTime: "20-30 min",
+    tags: ["veg", "meal prep", "budget friendly"],
+    menu: [
+      {
+        name: "Oats Berry Bowl",
+        price: 180,
+        calories: 290,
+        category: "Breakfast",
+        veg: true,
+        description: "Rolled oats, berries, chia seeds, and honey.",
+        tags: ["healthy", "veg", "fiber"],
+      },
+      {
+        name: "Grilled Veg Platter",
+        price: 260,
+        calories: 460,
+        category: "Lunch",
+        veg: true,
+        description: "Seasonal vegetables, quinoa, and lemon dressing.",
+        tags: ["veg", "budget", "light"],
+      },
+    ],
+  },
+  {
+    name: "Spice Junction",
+    location: "City Center",
+    cuisine: "Indian",
+    rating: 4.7,
+    deliveryTime: "25-35 min",
+    tags: ["family", "comfort food", "customizable"],
+    menu: [
+      {
+        name: "Paneer Wrap",
+        price: 220,
+        calories: 410,
+        category: "Breakfast",
+        veg: true,
+        description: "Grilled paneer with mint yogurt and fresh salad.",
+        tags: ["protein", "veg"],
+      },
+      {
+        name: "Chicken Rice Bowl",
+        price: 320,
+        calories: 560,
+        category: "Lunch",
+        veg: false,
+        description: "Tender chicken, rice, yogurt sauce, and greens.",
+        tags: ["high-protein", "non-veg"],
+      },
+    ],
+  },
+];
